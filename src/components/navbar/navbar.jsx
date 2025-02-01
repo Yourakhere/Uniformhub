@@ -49,7 +49,7 @@ const Navbar = () => {
       <div className="navMenu" style={{ display: showMenu ? 'flex' : 'none' }}>
         <Link activeclass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className="ListItem" onClick={() => setShowMenu(false)}>Home</Link>
         <Link activeclass='active' to='about' spy={true} smooth={true} offset={-50} duration={500} className="ListItem" onClick={() => setShowMenu(false)}>About</Link
-        <Link activeclass='active' to='works' spy={true} smooth={true} offset={-100} duration={500} className="ListItem" onClick={() => setShowMenu(false)}>Product</Link> 
+         
         <Link activeclass='active' to='contact' spy={true} smooth={true} offset={-100} duration={500} className="ListItem" onClick={() => setShowMenu(false)}>Contact Me</Link>
       </div>
       <div className="buttonContainer">
