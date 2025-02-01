@@ -1,0 +1,220 @@
+.navbar {
+  height: 5rem;
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background-color: rgb(30, 30, 30); /* Optional: Add background color */
+}
+
+.logo {
+  object-fit: cover;
+  height: 3rem;
+  width: 4rem;
+  object-fit: contain; 
+}
+
+.desktopMenu {
+  display: flex;
+  align-items: center;
+}
+
+.desktopMenuListItem {
+  margin: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.desktopMenuListItem:hover {
+  color: yellow;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid yellow;
+}
+
+.desktopMenuBtn {
+  border: none;
+  border-radius: 2rem;
+  background: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-left: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.desktopMenuBtn:hover {
+  transform: scale(1.05);
+}
+
+.desktopMenuImg {
+  object-fit: cover;
+  height: 1rem;
+  width: 1rem;
+}
+
+@media (max-width: 768px) {
+  .desktopMenu {
+    display: none;
+  }
+  .mobMessageBtn {
+    display: flex;
+    border: none;
+    border-radius: 2rem;
+    background: white;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-left: 1rem;
+    transition: transform 0.3s ease;
+  }
+  .mobMessageImg {
+    object-fit: cover;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobMessageBtn {
+    display: none;
+  }
+  .scrollToTop {
+    display: none;
+  }
+}
+
+.active {
+  color: yellow;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid yellow;
+}
+
+.mobMenu {
+  display: none;
+  object-fit: cover;
+  height: 1.8rem;
+}
+
+.navMenu {
+  position: absolute;
+  top: 4rem;
+  right: 2rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  height: fit-content;
+  min-width: 15rem;
+  background: rgb(40, 40, 40);
+  border-radius: 1rem;
+}
+
+.listItem {
+  color: white;
+  padding: 0.5rem;
+  margin: 0.25rem;
+  background: rgb(30, 30, 30);
+}
+
+@media screen and (max-width: 720px) {
+  .mobMenu {
+    display: flex;
+  }
+  .desktopMenu {
+    display: none;
+  }
+  .desktopMenuBtn {
+    display: none;
+  }
+}
+
+.buttonContainer {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.scrollToTop {
+  display: none; /* Initially hide the scroll to top button */
+  border: none;
+  border-radius: 50%;
+  background: #212534;
+  color: black;
+  padding: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.scrollToTop img {
+  height: 2rem;
+  width: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+/* Mobile Menu styling */
+@media (max-width: 768px) {
+  .desktopMenu {
+    display: none;
+  }
+  .mobMenu {
+    display: flex;
+    object-fit: cover;
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  .mobMenu:hover {
+    transform: scale(1.1);
+  }
+  .navMenu {
+    position: absolute;
+    top: 5rem;
+    right: 1rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 80%;
+    background: rgb(40, 40, 40);
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .ListItem {
+    color: white;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    background: rgb(30, 30, 30);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+}

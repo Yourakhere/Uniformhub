@@ -1,0 +1,16 @@
+  /*scrollbar code*/
+::-webkit-scrollbar{
+  width: 10px;
+ }
+ ::-webkit-scrollbar-track{
+  background-color: #201d1d;
+  border-radius: 10px;
+ }
+ ::-webkit-scrollbar-thumb{
+  background-color: #ffd500;
+  border-radius: 10px;
+ }
+ 
+body{
+   font-family: Arial, Helvetica, sans-serif;
+ }

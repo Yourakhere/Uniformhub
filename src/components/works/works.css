@@ -1,0 +1,188 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Container */
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px; 
+    border-radius: 8px;
+  }
+  
+  /* Header */
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  /* Product List */
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .product-card {
+    background-color: #2e2e2e;
+    width: 250px;
+    border: 1px solid #f6e203;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .product-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #fffcfc;
+  }
+  
+  .product-card p {
+    font-size: 1em;
+    color: #777;
+  }
+  
+  /* Product Details Section */
+  .product-details {
+    
+    padding: 20px;
+    
+    border-radius: 8px;
+    margin-top: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-details h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .product-details img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .product-details p {
+    color: #f8f2f2;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+  }
+  
+  /* Button Styles */
+  button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1em;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+  /* Delivery Method Section */
+  h3 {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #fffdfd;
+  }
+  
+  label {
+    font-size: 1.1em;
+    color: #555;
+    margin-right: 20px;
+  }
+  
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  /* QR Code Section */
+  .qr-code-section {
+    text-align: center;
+    margin-top: 30px;
+    
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .qr-code-section p {
+    font-size: 1.1em;
+    color: #fff9f9;
+    margin-bottom: 20px;
+  }
+  
+  .qr-code-section button {
+    background-color: #007bff;
+    margin: 10px;
+  }
+  
+  .qr-code-section button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Download Button and Payment Status */
+  button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+  .payment-status {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .payment-status p {
+    font-size: 1.2em;
+    color: #dc3545;
+  }
+  
+  .success-button {
+    background-color: #28a745;
+  }
+  
+  .failure-button {
+    background-color: #dc3545;
+  }
+  
+  .success-button:hover {
+    background-color: #218838;
+  }
+  
+  .failure-button:hover {
+    background-color: #c82333;
+  }
+  

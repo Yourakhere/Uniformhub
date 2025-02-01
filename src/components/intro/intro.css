@@ -1,0 +1,120 @@
+/* General layout */
+#intro {
+  height: calc(100vh - 4rem);
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Flex container for intro */
+.introContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 2rem;
+  position: relative;
+}
+
+/* Text content */
+.introText {
+  width: 200%;
+  color: white;
+  z-index: 1;
+}
+
+.introImage img {
+  width: 100%;
+  height: auto;
+  max-width: 50%;
+  object-fit: cover;
+  padding-left: 2rem;
+}
+
+.hello {
+  font-size: 1.75rem;
+  font-weight: 100;
+}
+
+.introTextMain {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.introName {
+  color: yellow;
+}
+
+.introPara {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  max-width: 40rem;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn img {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+  .introContent {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+
+  .introText {
+    width: 100%;
+    z-index: 2;
+    padding-top: 30%;
+  }
+
+  .introImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  .introImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+  }
+}
+
+/* Desktop Layout */
+@media screen and (min-width: 769px) {
+  .introImage img {
+    max-width: 50%;
+    object-fit: cover;
+    position: relative;
+    right: 0; /* Ensure image stays aligned correctly */
+  }
+}
